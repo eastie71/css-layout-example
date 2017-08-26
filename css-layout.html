@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webpage with Style!</title>
+	
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<style type="text/css">
+		.red {
+			color: red;
+		}
+		.large {
+			font-size: 120%;
+		}
+		#green {
+			color: green;
+		}
+		.underlined {
+			text-decoration: underline;
+		}
+		#first-section {
+			color: blue;
+			background-color: pink;
+			width: 400px;
+			position: relative;
+			top: 175px;
+			left: 100px;
+			z-index: 1;
+		}
+		#second-section {
+			background-color: yellow;
+			width: 225px;
+			position: relative;
+			z-index: 2;
+			opacity: 0.5;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1 class="red">CSS is cool!</h1>
+	<div id="first-section">
+		<p>This is actually the first section after the heading. It is 400px wide.</p>
+		<p>This is an example of <strong>relative</strong> positioning. <span class="underlined">Here is some underlined text</span></p>
+		<p>This section has top margin of 175 px and left margin of 100px</p> 
+		<p>It has a z-index of 1 (and next section has 2) so it sits underneath</p> 
+	</div>
+	<div id="second-section">
+		<p class="large">This is is the second section (also position is <strong>relative</strong>). It has its opacity halfed so you can see through it.</p>
+		<p>It is 225px wide</p>
+	</div>
+</body> 
+</html>
