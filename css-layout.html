@@ -8,14 +8,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
 	<style type="text/css">
-		.red {
+		.red-font {
 			color: red;
 		}
 		.large {
 			font-size: 120%;
-		}
-		#green {
-			color: green;
 		}
 		.underlined {
 			text-decoration: underline;
@@ -69,15 +66,40 @@
 			width: 200px;
 			background-color: fuchsia;
 		}
-		
+
+		/* Border styling */
+		.red {
+			background-color: red;
+			border: 10px yellow solid;
+		}
+		.blue {
+			color: white;
+			background-color: blue;
+			border-width: 8px;
+			border-style: ridge solid dotted dashed;
+			border-color: lightblue yellow red green;
+		}
+		.green {
+			background-color: green;
+			border-radius: 50%;
+		}
+		.square {
+			width: 200px;
+			height: 200px;
+			margin: 40px;
+			float: left;
+		}
+		.clear-float {
+			clear: both;
+		}
 	</style>
 </head>
 <body>
 	<a name="top"></a>
-	<h1 class="red">CSS is cool!</h1>
+	<h1 class="red-font">CSS is cool!</h1>
 	<h2>A mixture of static, relative, absolute and fixed divs below...</h2>
 	<div id="fixed-section">
-		<p>This is a <strong>FIXED</strong> position section. It will always stay here on the page. It is 400 from top and 700 from left</p>
+		<p>This is a <strong>FIXED</strong> position section. It will always stay here on the page. It is 400 from top and 700 from left. It stays on TOP of sections with position <strong>static</strong> and goes under those with position <strong>relative</strong> when you scroll the page</p>
 	</div>
 	<div id="first-section">
 		<p>This is actually the first section after the heading. It is 400px wide. Note: Paragraph tags (<strong>&lt;p&gt;</strong>) have default padding.</p>
@@ -107,6 +129,7 @@
 		<p>6th section here....</p>
 		<p>It is position <strong>relative</strong>. It is 800px WIDE</p>
 	</div>
+	<!--
 	<div class="other-section">
 		<p>7th section here....</p>
 		<p>It is position <strong>relative</strong>. It is 800px WIDE</p>
@@ -115,7 +138,22 @@
 		<p>8th section here....</p>
 		<p>It is position <strong>relative</strong>. It is 800px WIDE</p>
 	</div>
-	<div id="large-last-section">
+	-->
+	<h2>Border examples on colored shapes</h2>
+	<div class="red square">
+		<p>Yellow solid border of 10px</p>
+	</div>
+	<div class="blue square">
+		<p>8 px wide border</p>
+		<p>Light blue ridged border</p>
+		<p>Yellow solid border</p>
+		<p>Red dotted border</p>
+		<p>Green dashed border</p>
+	</div>
+	<div class="green square">
+		<p>Border radius 50% makes a circle :)</p>
+	</div>
+	<div class="clear-float" id="large-last-section">
 		<p>This is the last large div section...</p>
 		<p>It has the default position of <strong>static</strong></p>
 		<p>It is 950px wide and 550px high, with margin left of 250px</p>
