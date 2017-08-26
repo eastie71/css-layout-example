@@ -36,13 +36,51 @@
 			z-index: 2;
 			opacity: 0.5;
 		}
+		#third-section {
+			background-color: lightblue;
+			width: 300px;
+			height: 200px;
+			top: 470px;
+			left: 50px;
+			position: absolute;
+			border: 1px solid black;
+		}
+		.other-section {
+			width: 800px;
+			background-color: lightgreen;
+			position: relative;
+		}
+		#large-last-section {
+			font-weight: 800;
+			font-size: 200%;
+			margin-left: 250px;
+			width: 900px;
+			height: 550px;
+			background-color: red;
+			color: white;
+		}
+		#padding-fill {
+			margin-top: 225px;
+		}
+		#fixed-section {
+			position: fixed;
+			top: 400px;
+			left: 700px;
+			width: 200px;
+			background-color: fuchsia;
+		}
 		
 	</style>
 </head>
 <body>
+	<a name="top"></a>
 	<h1 class="red">CSS is cool!</h1>
+	<h2>A mixture of static, relative, absolute and fixed divs below...</h2>
+	<div id="fixed-section">
+		<p>This is a <strong>FIXED</strong> position section. It will always stay here on the page. It is 400 from top and 700 from left</p>
+	</div>
 	<div id="first-section">
-		<p>This is actually the first section after the heading. It is 400px wide.</p>
+		<p>This is actually the first section after the heading. It is 400px wide. Note: Paragraph tags (<strong>&lt;p&gt;</strong>) have default padding.</p>
 		<p>This is an example of <strong>relative</strong> positioning. <span class="underlined">Here is some underlined text</span></p>
 		<p>This section has top margin of 175 px and left margin of 100px</p> 
 		<p>It has a z-index of 1 (and next section has 2) so it sits underneath</p> 
@@ -51,5 +89,37 @@
 		<p class="large">This is is the second section (also position is <strong>relative</strong>). It has its opacity halfed so you can see through it.</p>
 		<p>It is 225px wide</p>
 	</div>
+	<div id="third-section">
+		<p>3rd section!!</p>
+		<p>So this is <strong>absolute</strong> position. 425px from top and 50px left - with a basic black border.</p>
+	</div>
+	<div id="padding-fill"></div>
+	<h2>More relative divs here</h2>
+	<div class="other-section">
+		<p>4th section here.... (Note: there is an empty margin fill div above so that this relative position sits where I want it!)</p>
+		<p>It is position <strong>relative</strong>. It is 800px WIDE</p>
+	</div>
+	<div class="other-section">
+		<p>5th section here....</p>
+		<p>It is position <strong>relative</strong>. It is 800px WIDE</p>
+	</div>
+	<div class="other-section">
+		<p>6th section here....</p>
+		<p>It is position <strong>relative</strong>. It is 800px WIDE</p>
+	</div>
+	<div class="other-section">
+		<p>7th section here....</p>
+		<p>It is position <strong>relative</strong>. It is 800px WIDE</p>
+	</div>
+	<div class="other-section">
+		<p>8th section here....</p>
+		<p>It is position <strong>relative</strong>. It is 800px WIDE</p>
+	</div>
+	<div id="large-last-section">
+		<p>This is the last large div section...</p>
+		<p>It has the default position of <strong>static</strong></p>
+		<p>It is 950px wide and 550px high, with margin left of 250px</p>
+	</div>
+	<p><a href="#top">Return to Top of Page</a></p>
 </body> 
 </html>
